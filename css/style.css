@@ -1,0 +1,89 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  padding-bottom: 100px;
+}
+menu {
+  background-color: yellow;
+  padding: 20px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 100px;
+}
+.pill {
+  background-color: turquoise;
+  border: solid 1px black;
+  padding: 20px;
+}
+
+/* EXERCICE 1 */
+.exercice1 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /*alignement horizontal*/
+}
+
+/* EXERCICE 2 */
+.exercice2 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* EXERCICE 3 */
+.exercice3 ul {
+  display: flex;
+  flex-direction: row;
+}
+.exercice3 li {
+  flex: 1;
+  text-align: center;
+}
+
+/* EXERCICE 4 */
+.exercice4 ul {
+  display: flex;
+  flex-direction: row;
+}
+.exercice4 li {
+  text-align: center;
+  margin: 0 10px;
+}
+.exercice4 > ul:first-child {
+  flex: 1;
+}
+.exercice4 > ul :nth-child(2) {
+  flex: 3;
+}
+
+/* EXERCICE 5 */
+.exercice5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.exercice5 ul {
+  display: inline-flex; /* change l'orientation de la liste ul => passe en horizontal*/
+  margin-left: auto; /* place l'élément à la fin comme un flex-end*/
+}
+
+/* EXERCICE 6 */
+.exercice6 ul {
+  display: flex;
+  flex-direction: column;
+  width: fit-content; /* adapte le ul au contenu du li*/
+  margin-left: 50%; /* place l'élément à mi-largeur de la page*/
+}
+.exercice6 .pill {
+  text-align: justify;
+}
+
+/* EXERCICE 7 */
+.exercice7 ul {
+  display: flex;
+  justify-content: space-around;
+}
+.exercice7 .pill {
+  border-radius: 100px;
+}
