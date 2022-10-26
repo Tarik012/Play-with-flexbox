@@ -20,21 +20,17 @@ h2 {
 /* EXERCICE 1 */
 .exercice1 ul {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start; /*alignement horizontal*/
 }
 
 /* EXERCICE 2 */
 .exercice2 ul {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
 }
 
 /* EXERCICE 3 */
 .exercice3 ul {
   display: flex;
-  flex-direction: row;
 }
 .exercice3 li {
   flex: 1;
@@ -44,7 +40,7 @@ h2 {
 /* EXERCICE 4 */
 .exercice4 ul {
   display: flex;
-  flex-direction: row;
+  /*gap: 30px;  si je veux ajouter un espace entre les carrés */
 }
 .exercice4 li {
   text-align: center;
@@ -60,26 +56,23 @@ h2 {
 /* EXERCICE 5 */
 .exercice5 {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
 }
 .exercice5 ul {
-  display: inline-flex; /* change l'orientation de la liste ul => passe en horizontal*/
-  margin-left: auto; /* place l'élément à la fin comme un flex-end*/
+  display: flex;
+
+  /*display: inline-flex; change l'orientation de la liste ul => passe en horizontal
+  margin-left: auto;  place l'élément à la fin comme un flex-end*/
 }
 
 /* EXERCICE 6 */
 .exercice6 ul {
   display: flex;
   flex-direction: column;
-  width: fit-content; /* adapte le ul au contenu du li*/
-  margin-left: 50%; /* place l'élément à mi-largeur de la page*/
-}
-.exercice6 .pill {
-  text-align: justify;
+  align-items: center;
 }
 
-/* EXERCICE 7 */
+/*EXERCICE 7 */
 .exercice7 ul {
   display: flex;
   justify-content: space-around;
